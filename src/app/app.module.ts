@@ -11,6 +11,7 @@ import { masterFirebaseConfig } from './api-keys';
 import { SignInComponent } from './sign-in/sign-in.component';
 import { FrontPageComponent } from './front-page/front-page.component';
 import { routing } from './app.routing';
+import { PostComponent } from './post/post.component';
 
 export const firebaseConfig = {
   apiKey: masterFirebaseConfig.apiKey,
@@ -25,7 +26,8 @@ export const firebaseConfig = {
   declarations: [
     AppComponent,
     SignInComponent,
-    FrontPageComponent
+    FrontPageComponent,
+    PostComponent
   ],
   imports: [
     BrowserModule,

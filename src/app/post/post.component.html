@@ -1,0 +1,38 @@
+<div class="panel panel-default">
+  <div class="panel-heading">
+    <h3 class="panel-title">Add New Post to SubReddit</h3>
+  </div>
+  <div class="panel-body">
+
+    <div>
+      <label>Post Title:</label>
+      <br>
+      <input #newTitle>
+    </div>
+
+    <div>
+      <label>Post User:</label>
+      <br>
+      <input #newUser>
+    </div>
+
+    <div>
+      <label>Post Date:</label>
+      <br>
+      <input #newTimestamp>
+    </div>
+
+    <div>
+      <label>Post Subreddit:</label>
+      <br>
+      <input #newSubreddit>
+    </div>
+
+    <div>
+      <label>Post Image:</label>
+      <br>
+      <input #newImage>
+    </div>
+     <button (click)="submitForm(newTitle.value, newUser.value, newDate.value, newSubreddit.value, newImage.value); newTitle.value=''; newUser.value=''; newDate.value=''; newSubreddit.value=''; newImage.value=''">Add</button>
+  </div>
+</div>
