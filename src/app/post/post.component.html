@@ -3,7 +3,6 @@
     <h3 class="panel-title">Add New Post to SubReddit</h3>
   </div>
   <div class="panel-body">
-
     <div>
       <label>Post Title:</label>
       <br>
@@ -33,6 +32,6 @@
       <br>
       <input #newImage>
     </div>
-     <button (click)="submitForm(newTitle.value, newUser.value, newDate.value, newSubreddit.value, newImage.value); newTitle.value=''; newUser.value=''; newDate.value=''; newSubreddit.value=''; newImage.value=''">Add</button>
+     <button (click)="submitForm(newTitle.value, newUser.value, newTimestamp.value, newSubreddit.value, newImage.value); newTitle.value=''; newUser.value=''; newTimestamp.value=''; newSubreddit.value=''; newImage.value=''">Add</button>
   </div>
 </div>

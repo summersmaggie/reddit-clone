@@ -15,4 +15,8 @@ export class PostService {
     return this.posts;
   }
 
+  addPost(newPost: Post) {
+    this.posts.push(newPost);
+  }
+
 }

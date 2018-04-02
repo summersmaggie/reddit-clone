@@ -11,7 +11,6 @@ import { Post } from '../post.model'
 })
 export class FrontPageComponent implements OnInit {
   posts: FirebaseListObservable<any[]>;
-  console.log(posts);
 
   constructor(private postService: PostService) { }
 
