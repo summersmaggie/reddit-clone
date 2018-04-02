@@ -16,9 +16,9 @@ export class PostComponent implements OnInit {
   ngOnInit() {
   }
 
-  submitForm(title: string, user: string, timestamp: string, subreddit: string, image: string) {
-    console.log(title);
-   var newPost: Post = new Post(title, user, timestamp, subreddit, image);
+  submitForm(title: string, user: string, timestamp: string, subreddit: string, image: string, tags: string[]) {
+    console.log(tags);
+   var newPost: Post = new Post(title, user, timestamp, subreddit, tags, image);
    this.postService.addPost(newPost);
  }
 

@@ -10,13 +10,13 @@
     <ul class="nav navbar-nav" class="login">
       <input type="text" name="username" placeholder="username">
       <input type="text" name="password" placeholder="password">
-      <button id ="loginbtn"><li *ngIf="isLoggedIn">
-        <h1>{{userName}}</h1>
+      <button id ="loginbtn"><div *ngIf="isLoggedIn">
+        <p>{{userName}}</p>
         <a (click)="logout()">Log out</a>
-      </li>
-      <li *ngIf ="!isLoggedIn">
+      </div>
+      <div *ngIf ="!isLoggedIn">
         <a (click)="login()">Log in</a>
-      </li></button>
+      </div></button>
     </ul>
   </form>
 </div>

@@ -28,10 +28,16 @@
     </div>
 
     <div>
+      <label>Post Tags:</label>
+      <br>
+      <input #newTags>
+    </div>
+
+    <div>
       <label>Post Image:</label>
       <br>
       <input #newImage>
     </div>
-     <button (click)="submitForm(newTitle.value, newUser.value, newTimestamp.value, newSubreddit.value, newImage.value); newTitle.value=''; newUser.value=''; newTimestamp.value=''; newSubreddit.value=''; newImage.value=''">Add</button>
+     <button (click)="submitForm(newTitle.value, newUser.value, newTimestamp.value, newSubreddit.value, newTags.value, newImage.value); newTitle.value=''; newUser.value=''; newTimestamp.value=''; newSubreddit.value=''; newTags.value=''; newImage.value=''" routerLink="">Add</button>
   </div>
 </div>

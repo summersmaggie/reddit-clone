@@ -1,4 +1,5 @@
 <nav class="navbar1">
+    <a class="nav-link" routerLink="">Reddit</a>
     <a class="nav-link" routerLink="hot">HOT</a>
     <a class="nav-link" routerLink="new">NEW</a>
     <a class="nav-link" routerLink="rising">RISING</a>
@@ -6,7 +7,8 @@
     <a class="nav-link" routerLink="top">TOP</a>
     <a class="nav-link" routerLink="gilded">GILDED</a>
     <a class="nav-link" routerLink="post">ADD POST</a>
-  </nav>
+</nav>
+
 
   <div class="row" id="front-page">
     <div class="col-lg-8">
@@ -17,15 +19,12 @@
     </div>
   </div>
 
-  <app-post></app-post>
+  <router-outlet></router-outlet>
 
-<!--
-<div class="footer1">
+<!-- <div class="footer1">
   <footer class="footer">
     <div class="container">
-      <p><em>Use of this site constitutes acceptance of our User Agreement and Privacy Policy. © 2018 reddit inc. All rights reserved.
-
-REDDIT and the ALIEN Logo are registered trademarks of reddit inc.</em></p>
+      <p><em>Use of this site constitutes acceptance of our User Agreement and Privacy Policy. © 2018 reddit inc. All rights reserved. REDDIT and the ALIEN Logo are registered trademarks of reddit inc.</em></p>
     </div>
   </footer>
 </div> -->

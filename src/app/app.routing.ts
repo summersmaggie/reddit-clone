@@ -6,10 +6,10 @@ import { FrontPageComponent } from './front-page/front-page.component';
 import { PostComponent } from './post/post.component';
 
 const appRoutes: Routes = [
-  {
-    path: '',
-    component: AppComponent
-  },
+  // {
+  //   path: '',
+  //   component: AppComponent
+  // },
   {
     path: 'post',
     component: PostComponent
