@@ -5,23 +5,14 @@
     <a class="nav-link" routerLink="controversial">CONTROVERSIAL</a>
     <a class="nav-link" routerLink="top">TOP</a>
     <a class="nav-link" routerLink="gilded">GILDED</a>
-    <ul class="nav navbar-nav navbar-right">
-      <li *ngIf="isLoggedIn">
-        <a>{{userName}}</a>
-        <a (click)="logout()">Log out</a>
-      </li>
-      <li *ngIf ="!isLoggedIn">
-        <a (click)="login()">Log in</a>
-      </li>
-    </ul>
   </nav>
 
-  <div class="row">
-    <div id="front-page" class="col-lg-8">
-      <p>component link</p>
+  <div class="row" id="front-page">
+    <div class="col-lg-8">
+      <app-front-page></app-front-page>
     </div>
     <div class="col-lg-4">
-        <p>login</p>
+        <app-sign-in></app-sign-in>
       </div>
 
     </div>

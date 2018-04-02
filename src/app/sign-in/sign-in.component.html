@@ -1,0 +1,22 @@
+<div class="container">
+  <form class="form-inline my-2 my-lg-0">
+    <input type="text" name="search" placeholder="search" role="search">
+    <button type="button" class="btn btn-default" aria-label="Left Align">
+      <span class="glyphicon glyphicon-search" aria-hidden="true"></span>
+    </button>
+  </form>
+
+  <form class="email">
+    <ul class="nav navbar-nav" class="login">
+      <input type="text" name="username" placeholder="username">
+      <input type="text" name="password" placeholder="password">
+      <button id ="loginbtn"><li *ngIf="isLoggedIn">
+        <h1>{{userName}}</h1>
+        <a (click)="logout()">Log out</a>
+      </li>
+      <li *ngIf ="!isLoggedIn">
+        <a (click)="login()">Log in</a>
+      </li></button>
+    </ul>
+  </form>
+</div>
