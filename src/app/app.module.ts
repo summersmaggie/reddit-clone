@@ -10,6 +10,8 @@ import { SignInComponent } from './sign-in/sign-in.component';
 import { FrontPageComponent } from './front-page/front-page.component';
 import { routing } from './app.routing';
 import { PostComponent } from './post/post.component';
+import { HotComponent } from './hot/hot.component';
+import { HotCategoryPipe } from './filter.pipe';
 
 export const firebaseConfig = {
   apiKey: masterFirebaseConfig.apiKey,
@@ -25,7 +27,9 @@ export const firebaseConfig = {
     AppComponent,
     SignInComponent,
     FrontPageComponent,
-    PostComponent
+    PostComponent,
+    HotComponent,
+    HotCategoryPipe
   ],
   imports: [
     BrowserModule,

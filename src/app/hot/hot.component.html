@@ -1,0 +1,8 @@
+<div class="well">
+  <div *ngFor="let post of posts | async | hotCategory" class="panel panel-default">
+    <div class="panel-body">
+      <img src="{{post.image}}" width="200" height="200" alt=""> <h3><em>{{post.title}}</em> by {{post.user}}</h3>
+      <h6>{{post.timestamp}}  r/{{post.subreddit}}</h6>
+    </div>
+  </div>
+</div>

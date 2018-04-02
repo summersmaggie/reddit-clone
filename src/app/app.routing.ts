@@ -4,15 +4,16 @@ import { AppComponent } from './app.component';
 import { SignInComponent } from './sign-in/sign-in.component';
 import { FrontPageComponent } from './front-page/front-page.component';
 import { PostComponent } from './post/post.component';
+import { HotComponent } from './hot/hot.component';
 
 const appRoutes: Routes = [
-  // {
-  //   path: '',
-  //   component: AppComponent
-  // },
   {
     path: 'post',
     component: PostComponent
+  },
+  {
+    path: 'hot',
+    component: HotComponent
   }
 ];
 
